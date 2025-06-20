@@ -1,0 +1,440 @@
+/*Fonts*/
+/* lato-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/lato-v24-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* lato-700 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/lato-v24-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* ojuju-700 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Ojuju';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/ojuju-v1-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+/* Universalselektor - boxmodell */
+* { 
+    box-sizing: border-box;
+}
+
+/* Normalize, ein paar Einstellungen, für den Browserunterschied */
+body,
+ul,
+h1 {
+  margin: 0;
+  padding: 0;
+}
+/* Allgemeine Textformatierungen */
+body{
+    font-family:'Lato';
+    color:black;
+    font-size: 1.4rem;
+    line-height: 2rem;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Ojuju';
+}
+h1{
+    font-size: 3rem;
+    margin: 1rem 0 2rem 0;
+}
+h2{
+  font-size: 2.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1.2rem;
+  text-align: left;
+}
+h3{
+    font-size: 1.5rem;
+    color: white;
+  
+}
+.hseite{
+  margin-right: 1rem;
+   margin-left: 1rem;
+   text-align: center;
+   padding-top: 1rem;
+   padding-bottom: 2rem;
+   border-bottom: #b4d0e9 dotted 0.1em;
+  }
+.pfooter{
+    font-size: 0.8rem;
+}
+ul {
+    list-style-type: square;
+  }
+.linkschwarz{
+  color: black;
+}
+p{
+    text-justify: inter-word;
+}
+figcaption{
+  margin-left: 10rem;
+  margin-bottom: 1rem;
+}
+figcaption:hover{
+  color:rgb(195, 49, 183);
+ 
+}
+button{
+  font-family:'Lato';
+  color:black;
+  font-size: 1.2rem;
+}
+/* Header*/
+header{ 
+    padding: 2rem 2rem 1rem 2rem;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    border-bottom: 0.3rem dotted #b4d0e9;
+    margin-bottom: 1rem;
+}
+.icons{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem
+}
+/* Navigation allgemein*/
+nav{
+    padding: 0;
+    display:flex;
+    justify-content: space-evenly;
+}
+nav ul{
+    height: auto;
+    overflow: hidden;
+    transition: all 1s;
+    }
+nav ul li{
+  display: inline-block;
+  justify-content: start;
+  margin: 0.2rem 0 0.2rem 0.5rem;
+}
+nav ul li a{
+  font-size: 1rem;
+  text-decoration: none;
+  background-color: #b4d0e9;
+  color:#363636;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  position: relative;
+  }
+/* Hamburger Menu */
+/* ICON */
+#burger {
+    display: none;
+  }
+  
+#burger {
+  position: relative;
+  width: 30px;
+  height: 15px;
+  padding: 15px;
+  }
+#burger span {
+    position: absolute;
+    display: block;
+    width: 20px;
+    height: 3px;
+    background-color: rgb(43, 42, 42);
+    transition: all 500ms;
+    border-radius: 2px;
+}
+  
+  #burger span:nth-child(1) {
+    top: 5px;
+  }
+  
+  #burger span:nth-child(2) {
+    top: 12px;
+  }
+  
+  #burger span:nth-child(3) {
+    top: 19px;
+  }
+  
+  #burger.kreuz span:nth-child(1) {
+    transform: rotate(-135deg);
+    top: 16px;
+  }
+  
+  #burger.kreuz span:nth-child(2) {
+    width: 0px;
+    left: 15px;
+  }
+  
+  #burger.kreuz span:nth-child(3) {
+    transform: rotate(135deg);
+    top: 16px;
+  }
+  
+  /* Höhe für Menu */
+  #menue.einblenden {
+    height: auto;
+
+  }
+  
+  /* Verlinkungen */
+ a{
+    color: darkslategrey;
+    text-decoration: none;
+    }
+  
+  nav a:hover {
+    color: white;
+    background-color:rgb(195, 49, 183);
+  }
+
+/*Allgemeine Einstellungen*/
+main{
+  display: block;
+}
+section{
+  background-color: #CAFE48;
+  margin: 1rem;
+  padding: 2rem;
+}
+article{
+  margin: 1rem;
+  padding: 1rem;
+  background-color: #CAFE48;
+  text-align:justify;
+  align-items: center;
+}
+#nachoben{
+  background-color: white;
+  text-align:right;
+  margin: 1rem;
+  
+}
+#nachoben :hover{
+  color:rgb(195, 49, 183);
+}
+/* HOME */
+#main {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto;
+
+    grid-template-areas:
+    "shop workshop"
+    "ueberuns ueberuns"
+}
+.shop{
+    grid-area: shop;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+ }
+.workshops{
+    grid-area: workshop;
+    margin-left: 0.5rem;
+    margin-bottom: 0.5rem;
+ }
+.ueberuns{
+   grid-area: ueberuns;
+   display: flex;
+   float: left;
+   gap: 3rem;
+   margin-top: 0.5rem;
+   margin-bottom: 0;
+ }
+
+ /* Video, Bild */
+video{
+    border: 1rem solid white;
+    width: 30vw;
+}
+img{
+  max-width: 100%;
+  border: 1rem solid white;
+}
+.logo{
+  width: 25%;
+}
+/* Bild zoom Animation */
+.img-hover-zoom {
+    overflow: hidden;
+  }
+.img-hover-zoom img {
+    transition: transform .5s ease;
+  }
+.img-hover-zoom:hover img {
+    transform: scale(1.4);
+}
+
+ /* Footer */
+footer{
+    font-size: 0.75rem;
+    color: white;
+    background-color: #2b2b2b;
+    padding: 0 3rem 1rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+ }
+ul{
+  list-style-type: none;
+ }
+footer ul li a{
+    text-decoration:none;
+    line-height: 0rem;
+    color: white;
+    font-size: 1rem;
+}
+footer ul li a:hover{
+    color:rgb(195, 49, 183);
+}
+.social{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem
+}
+
+/*SHOP*/
+/*Gallery für JS*/
+#gallery {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-items: center;
+  justify-content: space-evenly;
+}
+.gallery-item:hover {
+  text-decoration: none; 
+}
+.gallery-item img {
+  max-width: 15rem;
+  border: 0.6rem solid white;
+}
+#overlay {
+  height: 158vh;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  background-color: #000000; 
+  opacity: 0.8;
+}
+#overlay-container {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+}
+#overlay-image {
+  max-width: 100%; 
+  max-height: 100%;
+  margin-top: 22%;
+  margin-right: auto; 
+  margin-left: auto;
+  display: block;
+}
+
+/*WORKSHOP*/
+#workshop{
+  display: flex;
+  float: left;
+}
+/* Diashow - Bild*/
+.slideshow{
+  text-align: center;
+}
+#idBild{
+  margin-top: 2rem;
+}
+/*Diashow - Buttons*/
+button{
+  font-size: 1rem;
+  background-color: #b4d0e9;
+  color:#363636;
+  padding: 0.5rem 0.8rem;
+  border-radius: 10px;
+  border: none;
+}
+.buttons{
+  margin: 0 3rem;
+  gap: 0.5rem;
+  display: flex;
+  justify-content: center;
+}
+.buttons :hover{
+  background-color: rgb(195, 49, 183);
+  color: white;
+}
+#idStart{
+ font-weight: bold;
+ margin: 0 3rem;
+ padding: 0 3rem;
+}
+.stop{
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+/*Teilnehmen button*/
+#bteil{
+  text-align: center;
+}
+.bteil{
+  text-align: center;
+  padding: 1rem 2rem;
+  background-color: white;
+  border: #b4d0e9 solid 0.7em;
+  border-radius: 5rem;
+  font-size: 1.5rem;
+}
+.bteil:hover{
+  border:rgb(195, 49, 183) 1rem dashed;
+}
+
+/*KONTAKT*/
+#formular{
+  display: flex;
+  justify-content: center;
+  gap: 10rem;
+  padding: 3rem 1rem;
+}
+
+/*Butoons*/
+.kbuttons{
+  margin-top: 1.5rem;
+}
+.kbuttons :hover{
+  background-color: rgb(195, 49, 183);
+  color: white;
+}
+.senden{
+  font-weight: bold;
+}
+.zurueck{
+  margin-right: 1rem;
+  background-color: rgb(220, 180, 217);
+}
+
+/*Bild*/
+.imgkontakt{
+  width: 50rem;
+}
+

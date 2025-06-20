@@ -1,0 +1,413 @@
+/* Media Queries für Tablet und Smartphone */
+
+/* Tablet */
+
+/*Mittlere Bildschirmgröße - Tablets ab 600px bis 1000px  */
+@media screen and (min-width: 38rem) and (max-width:63rem){
+
+/* Allgemeine Textformatierungen */
+body{
+    font-size: 1rem;
+    line-height: 2rem;
+}
+h1{
+    font-size:2rem;
+}
+h2{
+    font-size: 1.8rem;
+}
+.hseite{
+    font-size:2rem;
+    text-align: center;
+    margin: 1rem 0;
+    padding: 0 0 1rem 0;
+    border-bottom: #b4d0e9 dotted 0.15em;   
+}
+/*Header*/
+header{
+    padding: 3rem 1rem 1rem 1rem;
+    border-bottom: 0.3rem dotted #b4d0e9;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 5rem auto;
+    grid-template-areas:
+    "logo logo"
+    "navi icons";
+}
+.icons{
+    grid-area: icons;
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    justify-content: end;
+}
+.logo{
+    grid-area: logo;
+    width: 18rem;
+    justify-self: center;
+    margin-bottom: 3rem;
+}
+
+/*Navigation*/
+nav{
+    display:flex;
+    flex-direction: row;
+    grid-area: navi;
+    justify-content: start;
+}
+nav ul li{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+nav ul li a{
+    font-size: 0.9rem;
+    text-decoration: none;
+    background-color: #b4d0e9;
+    color:#363636;
+    padding: 0.3rem 0.8rem;
+    border-radius: 5px;
+    }
+
+/*Main - Bereiche*/
+main{
+    display: block;
+}
+#main{
+    display: block;
+}
+section{
+    padding: 0;
+}
+article{
+    padding:0.5rem 1rem;
+    margin: 1rem;
+}
+.shop{
+    margin: 1rem 1rem 0.5rem 1rem;
+}
+.workshops{
+    margin: 1rem;
+}
+.ueberuns{
+    margin-top: 0;
+    display: block;
+    align-items: center;
+}
+#nachoben{
+    margin: 0 1rem 0.5rem 1rem;
+}
+
+/*Video, Bild*/
+video{
+    border: 0.5rem solid white;
+    width: 75vw;
+    margin-left: 3rem;
+}
+img{
+    border: 0.5rem solid white;
+}
+/*Footer*/
+footer{
+   gap:2rem 
+}
+footer ul li a{
+    font-size: 0.8rem;
+}
+.space{
+    display: none;
+}
+
+/*SHOP*/
+#gallery {
+    display: grid;
+    grid-template-columns: auto auto ;
+    justify-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 0;
+  }
+.gallery-item:hover {
+    text-decoration: none; 
+  }
+.gallery-item img {
+    max-width: 15rem;
+}
+#overlay {
+    height: 300vh;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    background-color: #000000; 
+    opacity: 0.8;
+}
+  #overlay-container {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+  }
+  #overlay-image {
+    max-width: 100%; 
+    max-height: 100%;
+    margin-top: 50%;
+    margin-right: auto; 
+    margin-left: auto;
+    display: block;
+}
+
+/*WORKSHOP*/
+#workshop{
+    display: block;
+    padding: 0;
+    margin: 0 1rem;
+}
+.aworkshop{
+    margin-bottom: 0;
+
+}
+button{
+    font-size: 0.8rem;
+    padding: 0.5rem 0.8rem;
+}
+.buttons{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+#idStart{
+   font-weight: bold;
+   font-size: 1rem;
+   margin: 0 2rem;
+   padding: 0 3rem;
+}
+.stop{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+
+/*KONTAKT*/
+#formular{
+    display: block;
+    margin: 1rem 1rem 0 1rem;
+    padding: 2rem;
+}
+figure .imgkontakt{
+    display: none;
+}
+}
+
+/********************************************************************************************/
+
+/* Smartphone */
+@media screen and (max-width: 38rem){
+
+/* Allgemeine Textformatierungen */
+body{
+    font-size: 1rem;
+    line-height: 2rem;;
+}
+h1{
+    font-size: 2rem;
+    text-align: center;
+}
+h2{
+    font-size: 1.5rem;
+}
+h3{
+    font-size: 1rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+.hseite{
+    font-size:2rem;
+    text-align: center;
+    margin: 1rem 0;
+    padding: 0 0 1rem 0;
+    border-bottom: #b4d0e9 dotted 0.15em;   
+}
+/*Header*/
+header{
+    padding: 2rem 0 0.7rem 0;
+    border-bottom: 0.3rem dotted #b4d0e9;
+    display: grid;
+    grid-template-columns: 60% 0% 35%;
+    grid-template-rows: 5rem auto;
+    grid-template-areas:
+    "logo logo logo"
+    "burger menue icons";
+}
+main{
+    display: block;
+}
+article{
+    display: block;
+}
+.icons{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    grid-area: icons;
+    align-self: baseline;
+}
+.logo{
+    grid-area: logo;
+    width: 15rem;
+    justify-self: center;
+    margin-bottom: 3rem;
+}
+#menue a{
+    font-size: 1rem;
+    padding: 0.5rem 0.8rem;
+}
+#menue li{
+    margin: 1rem 0 1.5rem 1.5rem;
+}
+/* die .einblenden wird über das JavaScript angesprochen */
+#menue.einblenden {
+    height: 18rem;
+  }
+/* Icon einblenden */
+#burger {
+    display: block;
+    grid-area: burger;
+}
+nav ul {
+    height: 0;
+    overflow: hidden;
+    transition: all 1s;
+}
+nav ul li {
+    display: block;
+}
+ 
+/* Main Bereiche */
+main{
+    display: block;
+}
+#main{
+    display: block;
+}
+section{
+    padding: 0;
+}
+.shop{
+    margin: 1rem 1rem 0.5rem 1rem;
+}
+.workshops{
+    margin:1rem 1rem 0.5rem 1rem;
+}
+.ueberuns{
+   display: block;
+}
+.space{
+    display: none;
+}
+#nachoben{
+    margin: 0 1rem 0.5rem 1rem;
+}
+
+/*Video, Bild*/
+img{
+    margin: 0;
+    border: 0.5rem solid white;
+}
+/* Bild zoom Animation */
+.img-hover-zoom img {
+    transition: none;
+}
+.img-hover-zoom:hover img {
+    transform: none;
+}
+video{
+    border: 0.5rem solid white;
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+    width: 75vw;
+}
+
+/*Footer*/
+footer{
+    padding: 1rem;
+    gap: 1rem;
+}
+footer ul li a{
+    font-size: 0.7rem;
+}
+.pfooter{
+    margin-top: 1rem;
+    font-size: 0.6rem;
+}
+
+/*SHOP*/
+#gallery {
+    display: block;
+    padding: 1rem;
+}
+.gallery{
+    margin: 0;
+    padding: 1rem;
+}
+#overlay{
+    height: 440vh;
+}
+#overlay-image {
+    max-width: 90%; 
+    max-height: 90%;
+    margin-top: 30rem;
+}
+figcaption{
+    margin-left: 11rem;
+}
+
+/*WORKSHOP*/
+#workshop{
+    display: block;
+    float: none;
+}
+#idBild{
+    margin-top: 2rem;
+  }
+button{
+    font-size: 0.8rem;
+    padding: 0.3rem 0.5rem;
+}
+.buttons{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 0.2rem;
+}
+#idStart{
+   font-weight: bold;
+   font-size: 1rem;
+   margin: 0 0.5rem;
+   padding: 0 1rem;
+}
+.stop{
+    display: flex;
+    justify-content: center;
+}
+.aworkshop{
+    margin: 0;
+    padding: 0.5rem;
+    
+}
+
+/*KONTAKT*/
+#formular{
+    display: block;
+   margin: 1rem 1rem 0 1rem;
+   padding: 2rem;
+}
+figure .imgkontakt{
+    display: none;
+}
+.zurueck{
+    margin-right: 1rem;
+}
+}

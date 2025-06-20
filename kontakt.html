@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="decription" content="Eine Webseite über einen Keramikladen für Portfolioaufgaben im Rahmen der Ausbildung zum Mediengestalter.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MudMingle</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="normalize" href="css/normalize.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="icon" href="img/icon.svg">
+</head>
+<body>
+    <header id="home">
+        <div class="logo">
+            <a href="index.html">
+            <img src="img/logo.png" alt="logo"> 
+            </a>
+        </div>
+        <nav>
+            <div id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul id="menue">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="workshops.html">Workshops</a></li>
+                <li><a href="index.html#ueberuns">Über uns</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+        <div class="icons">
+            <span class="material-symbols-outlined">favorite</span>
+                <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+            <span class="material-symbols-outlined">person</span>
+                <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+            <span class="material-symbols-outlined">shopping_cart</span>
+                <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+        </div>
+    </header>
+    <main>
+        <h1 class="hseite">KONTAKT</h1>
+        <section id="formular">
+            <form action="script.php" method="post">
+                <h2>Deine Nachricht:</h2>
+                <label for="name">Name</label>
+                <br>
+                <input type="text" id="name" required>
+                <br>
+                <label for="email">E-Mail</label>
+                <br>
+                <input type="text" name="email" id="email" required>
+                <br>
+                <label for="message">Nachricht</label><br>
+                <textarea name="message" id="message" cols="30" rows="15"></textarea>
+                <br>
+                <h2>Bist du schon unser Kunde?</h2>
+                <input type="radio" id="ja" name="option" value="ja">
+                <label for="ja">Ja</label>
+                <br>
+                <input type="radio" id="nein" name="option" value="nein">
+                <label for="nein">Nein</label>
+                <br>
+                <h2>Woher kennst du uns?</h2>
+                <input type="checkbox" id="message1" name="message1">
+                <label for="message1">Social Media</label>
+                <br>
+                <input type="checkbox" id="message2" name="message2">
+                <label for="message2">Freunde</label>
+                <br>
+                <input type="checkbox" id="message3" name="message2">
+                <label for="message2">Werbung</label>
+             <br>
+             <div class="kbuttons">
+                <button class=zurueck type="reset"> Zurücksetzen</button>
+                <button class=senden type="submit">SENDEN</button>
+            </div>
+            </form>
+            <figure>
+                <img class="imgkontakt" src="img/pupa.jpg" alt="frauen">
+            </figure>
+        </section>
+    </main>
+    <div id="nachoben">
+        <a href="#home">nach oben
+            <svg width="2rem" height="3rem" viewBox="-5 13 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(180)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 16L12 8" stroke="#323232" stroke-width="1.3679999999999999" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M9 13L11.913 15.913V15.913C11.961 15.961 12.039 15.961 12.087 15.913V15.913L15 13" stroke="#323232" stroke-width="1.3679999999999999" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+        </a>
+    </div>
+    <footer>
+        <div>
+            <h3>FOLGE UNS</h3>
+            <ul class="social">
+                <li>
+                    <a href="https://www.facebook.com/"><svg aria-hidden="true" focusable="false" width="24" class="icon icon-facebook" viewBox="0 0 24 24">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10.183 21.85v-8.868H7.2V9.526h2.983V6.982a4.17 4.17 0 0 1 4.44-4.572 22.33 22.33 0 0 1 2.667.144v3.084h-1.83a1.44 1.44 0 0 0-1.713 1.68v2.208h3.423l-.447 3.456h-2.97v8.868h-3.57Z" fill="currentColor"></path>
+                    </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/"><svg aria-hidden="true" focusable="false" width="24" class="icon icon-instagram" viewBox="0 0 24 24">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2.4c-2.607 0-2.934.011-3.958.058-1.022.046-1.72.209-2.33.446a4.705 4.705 0 0 0-1.7 1.107 4.706 4.706 0 0 0-1.108 1.7c-.237.611-.4 1.31-.446 2.331C2.41 9.066 2.4 9.392 2.4 12c0 2.607.011 2.934.058 3.958.046 1.022.209 1.72.446 2.33a4.706 4.706 0 0 0 1.107 1.7c.534.535 1.07.863 1.7 1.108.611.237 1.309.4 2.33.446 1.025.047 1.352.058 3.959.058s2.934-.011 3.958-.058c1.022-.046 1.72-.209 2.33-.446a4.706 4.706 0 0 0 1.7-1.107 4.706 4.706 0 0 0 1.108-1.7c.237-.611.4-1.31.446-2.33.047-1.025.058-1.352.058-3.959s-.011-2.934-.058-3.958c-.047-1.022-.209-1.72-.446-2.33a4.706 4.706 0 0 0-1.107-1.7 4.705 4.705 0 0 0-1.7-1.108c-.611-.237-1.31-.4-2.331-.446C14.934 2.41 14.608 2.4 12 2.4Zm0 1.73c2.563 0 2.867.01 3.88.056.935.042 1.443.199 1.782.33.448.174.768.382 1.104.718.336.336.544.656.718 1.104.131.338.287.847.33 1.783.046 1.012.056 1.316.056 3.879 0 2.563-.01 2.867-.056 3.88-.043.935-.199 1.444-.33 1.782a2.974 2.974 0 0 1-.719 1.104 2.974 2.974 0 0 1-1.103.718c-.339.131-.847.288-1.783.33-1.012.046-1.316.056-3.88.056-2.563 0-2.866-.01-3.878-.056-.936-.042-1.445-.199-1.783-.33a2.974 2.974 0 0 1-1.104-.718 2.974 2.974 0 0 1-.718-1.104c-.131-.338-.288-.847-.33-1.783-.047-1.012-.056-1.316-.056-3.879 0-2.563.01-2.867.056-3.88.042-.935.199-1.443.33-1.782.174-.448.382-.768.718-1.104a2.974 2.974 0 0 1 1.104-.718c.338-.131.847-.288 1.783-.33C9.133 4.14 9.437 4.13 12 4.13Zm0 11.07a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4Zm0-8.13a4.93 4.93 0 1 0 0 9.86 4.93 4.93 0 0 0 0-9.86Zm6.276-.194a1.152 1.152 0 1 1-2.304 0 1.152 1.152 0 0 1 2.304 0Z" fill="currentColor"></path>
+                    </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.pinterest.de/" ><svg aria-hidden="true" focusable="false" width="24" class="icon icon-pinterest" viewBox="0 0 24 24">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.765 2.401c3.59-.054 5.837 1.4 6.895 3.95.349.842.722 2.39.442 3.675-.112.512-.144 1.048-.295 1.53-.308.983-.708 1.853-1.238 2.603-.72 1.02-1.81 1.706-3.182 2.052-1.212.305-2.328-.152-2.976-.643-.206-.156-.483-.36-.56-.643h-.029c-.046.515-.244 1.062-.383 1.531-.193.65-.23 1.321-.472 1.929a12.345 12.345 0 0 1-.942 1.868c-.184.302-.692 1.335-1.061 1.347-.04-.078-.057-.108-.06-.245-.118-.19-.035-.508-.087-.766-.082-.4-.145-1.123-.06-1.53v-.643c.096-.442.092-.894.207-1.317.25-.92.39-1.895.648-2.848.249-.915.477-1.916.678-2.847.045-.21-.21-.815-.265-1.041-.174-.713-.042-1.7.176-2.236.275-.674 1.08-1.703 2.122-1.439.838.212 1.371 1.118 1.09 2.266-.295 1.205-.677 2.284-.943 3.49-.068.311.05.641.118.827.248.672 1 1.324 2.004 1.072 1.52-.383 2.193-1.76 2.652-3.246.124-.402.109-.781.206-1.225.204-.935.118-2.331-.177-3.061-.472-1.17-1.353-1.92-2.563-2.328L12.707 4.3c-.56-.128-1.626.064-2.004.183-1.69.535-2.737 1.427-3.388 3.032-.222.546-.344 1.1-.383 1.868l-.03.276c.13.686.144 1.14.413 1.653.132.252.447.451.5.765.032.185-.104.464-.147.613-.065.224-.041.48-.147.673-.192.349-.714.087-.943-.061-1.192-.77-2.175-2.995-1.62-5.144.085-.332.09-.62.206-.919.723-1.844 1.802-2.978 3.359-3.95.583-.364 1.37-.544 2.092-.734l1.149-.154Z" fill="currentColor"></path>
+                    </svg>
+                    </a>
+                </li>
+            </ul>
+            <p class="pfooter">2024 created by Aleksandra Lachowicz</p>    
+        </div>
+        <div>
+            <h3>INFO</h3>
+            <ul>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="workshops.html">Workshops</a></li>
+                <li><a href="#agbs">AGBs</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3>HILFE</h3>
+            <ul>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="#versand">Versand & Retoure</a></li>
+            </ul>
+        </div>
+    </footer>
+    </div>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/start.js"></script>
+</body>
+</html>
